@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Items</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: red;
+            height: 700px;
+            padding: 2px;
+            gap: 2px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 134px 1fr 34px;
+
+        }
+    .block1{
+        border: 2px solid black;
+        background-color: blueviolet;
+        height: 132px;
+        /* width: 132px; */
+        grid-column-start: 1 ;
+        grid-column-end: 4;
+    }
+    .block2{
+        border: 2px solid black;
+        background-color: blueviolet;
+        height: 132px;
+        width: 132px;
+    }
+    .block3{
+        border: 2px solid black;
+        background-color: blueviolet;
+        height: 132px;
+        width: 132px;
+    }
+    .block4{
+        border: 2px solid black;
+        background-color: blueviolet;
+        height: 132px;
+        width: 132px;
+    }
+    .block5{
+        border: 2px solid black;
+        background-color: blueviolet;
+        height: 132px;
+        width: 132px;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="block1">1</div>
+     <div class="block2">2</div>
+     <div class="block3">3</div>
+     <div class="block4">4</div>
+     <div class="block5">5</div>   
+    </div>
+    
+</body>
+</html>
