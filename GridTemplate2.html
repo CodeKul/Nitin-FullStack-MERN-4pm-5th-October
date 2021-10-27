@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tempalte</title>
+    <style>
+        .container{
+          
+            height: 700px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat( 3, 1fr);
+            grid-template-rows: 1f 1fr 1fr;
+            align-items: center;
+        }
+        .box3{
+            border: 2px solid black;
+            height: 850px;
+            margin-top: 80px;
+            width: 350px;
+            position: relative;
+            right: 400px;
+
+        }
+        
+        .box4,.box5,.box6{
+            border: 2px solid black;
+            height: 290px;
+            width: 290px;    
+        }
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: 2px solid black;
+            display: flex;
+            gap: 20px;
+            justify-content: end;
+            padding-right: 200px;
+            height: 70px;
+            
+        
+        }
+        .box2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 600px;
+            width: 900px;
+            padding-top: 10px;
+            position: relative;
+            top: -90px;
+        }
+        #logo{
+            border-radius: 50%;
+        }
+        .logo{
+            padding-right: 850px;
+            padding-bottom: 10px;
+            position: relative;
+            top: -10px;
+        }
+        .cards{
+            display: flex;
+            position: relative;
+            top: -250px;
+            gap: 10px;
+        }
+        
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="logo"><img id="logo" src="https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_640.jpg" height="100" width="100" alt=""></div>
+
+            <h4>Home</h4>
+            <h4>About US</h4>
+            <h4>Contact US</h4>
+            <h4><button>Login</button></h4>
+        </div>
+        <div class="box2"><img  src="https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_640.jpg" height="600"  width="900" alt=""></div>
+        <div class="box3">3</div>
+        <div class="cards">
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+    </div>
+    </div>
+    
+</body>
+</html>
